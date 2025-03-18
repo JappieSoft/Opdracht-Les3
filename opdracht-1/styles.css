@@ -1,0 +1,114 @@
+/*---------------------------------------------------------*/
+
+.navbar-one ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+/*---------------------------------------------------------*/
+
+.navbar-two ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+/*---------------------------------------------------------*/
+.navbar-three {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-three div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    align-self: center;
+}
+.navbar-three ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+
+/*---------------------------------------------------------*/
+
+.navbar-four {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navfour-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    align-self: center;
+    flex-grow: 0;
+}
+
+.navfour-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.navfour-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    align-self: center;
+    gap: 15px;
+    flex-grow: 0;
+}
+
+/*---------------------------------------------------------*/
+.navbar-five {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar-five div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    align-self: center;
+}
+
+.navfive-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+    align-self: center;
+}
+
+.navfive-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    align-self: center;
+    gap: 15px;
+}
+
+/*---------------------------------------------------------*/
