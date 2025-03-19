@@ -5,7 +5,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    list-style: none;
+}
+
+.navbar-one li{
+    display: flex;
 }
 
 /*---------------------------------------------------------*/
@@ -15,13 +18,20 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    list-style: none;
+}
+
+.navbar-two li{
+    display: flex;
 }
 
 /*---------------------------------------------------------*/
 .navbar-three {
     display: flex;
     justify-content: space-between;
+}
+
+.navbar-three li{
+    display: flex;
 }
 
 .navbar-three div {
@@ -37,7 +47,6 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    list-style: none;
 }
 
 
@@ -46,6 +55,10 @@
 .navbar-four {
     display: flex;
     justify-content: space-between;
+}
+
+.navbar-four li{
+    display: flex;
 }
 
 .navfour-div {
@@ -61,7 +74,6 @@
 .navfour-menu {
     display: flex;
     flex-direction: row;
-    list-style: none;
     align-self: center;
     flex-grow: 1;
 }
@@ -70,7 +82,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    list-style: none;
     align-self: center;
     gap: 15px;
     flex-grow: 0;
@@ -81,6 +92,9 @@
     display: flex;
     justify-content: space-between;
 
+}
+.navbar-five li{
+    display: flex;
 }
 
 .navbar-five div {
@@ -97,7 +111,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    list-style: none;
     align-self: center;
 }
 
@@ -106,7 +119,6 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    list-style: none;
     align-self: center;
     gap: 15px;
 }
