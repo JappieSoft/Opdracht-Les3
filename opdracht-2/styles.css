@@ -1,4 +1,4 @@
-/*------------------Temp------------------------*/
+/*------------------Global------------------------*/
 body {
     display: flex;
     flex-direction: row;
@@ -11,97 +11,150 @@ body {
 
 }
 
+
+/*------------------NAVBAR----------------------*/
+
 aside{
     display: flex;
     flex-direction: column;
-    background-color: red;
-    border: 3px solid black;
     flex-basis: 250px;
     flex-shrink: 0;
-}
-
-.content-section {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 400px;
     flex-grow: 1;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    overflow-y: hidden;
 }
-
-.content-section p {
-    flex-shrink: 0;
-
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    background-color: pink;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    background-color: forestgreen;
-    border: 3px solid black;
-
-}
-
-
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: blue;
-    border: 3px solid black;
-    justify-items: center;
-    align-items: center;
-
-}
-
-/*------------------NAVBAR----------------------*/
 
 .navbar-left {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-evenly;
-    border: 3px solid black;
 }
 
 .navbar-left li{
     display: flex;
-
+    align-items: center;
 }
 
 .navleft-div {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
     gap: 10px;
-    align-self: center;
     flex-grow: 0;
+    padding: 10px 0;
 }
 
 .navleft-menu {
     display: flex;
     flex-direction: column;
-    align-self: center;
+    justify-content: flex-start;
     flex-grow: 1;
+    padding: 10px 0;
+
+}
+.navleft-menu img{
+    display: flex;
+    max-height: 15px;
+
 }
 
 .navleft-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: center;
     gap: 15px;
-    flex-grow: 0;
+    align-self: stretch;
+}
+
+.button-primary {
+    display: flex;
+    flex-grow: 1;
+    width: 250px;
+    justify-content: center;
+}
+
+.button-secondary {
+    display: flex;
+    flex-grow: 1;
+    width: 250px;
+    justify-content: center;
+}
+
+
+/*---------------------------------------------------------*/
+/*----------------------------MAIN-------------------------*/
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 425px;
+    flex-grow: 12;
+    flex-shrink: 0;
+    overflow-y: hidden;
+}
+
+.content-section p {
+    flex-shrink: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: url("../assets/placeholder-image.svg");
+    background-position: center;
+    text-align: center;
+    flex-basis: 400px;
+    justify-content: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 40px 80px;
+}
+
+.main-article{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: center;
+    flex-shrink: 0;
+    overflow-wrap: normal;
+    overflow: visible;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 260px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    gap: 15px;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+    overflow-wrap: normal;
+    overflow: visible;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30px;
+    background-color: #383838;
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
 }
 
 /*---------------------------------------------------------*/
