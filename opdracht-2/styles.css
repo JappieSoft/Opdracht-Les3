@@ -1,14 +1,19 @@
-/*------------------Global------------------------*/
 body {
+/*    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh);*/
+    /*    overflow-wrap: break-word;
+    TEMP REMOVE
+        padding: 0;
+        height: 100%;*/
+
+}
+/*------------------Global------------------------*/
+
+.flex-containter {
     display: flex;
     flex-direction: row;
-    min-height: calc(100vh);
-    overflow-wrap: break-word;
-
-    margin: 0;
-    padding: 0;
-    height: 100%;
-
+    min-height: 100vh;
 }
 
 
@@ -20,6 +25,8 @@ aside{
     flex-basis: 250px;
     flex-shrink: 0;
     flex-grow: 1;
+    max-height: calc(100vh);
+
 }
 
 .navbar-left {
@@ -61,6 +68,8 @@ aside{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
     gap: 15px;
     align-self: stretch;
 }
@@ -88,12 +97,16 @@ aside{
     flex-direction: column;
     flex-basis: 425px;
     flex-grow: 12;
-    flex-shrink: 0;
+/*    flex-shrink: 0;*/
     overflow-y: hidden;
+    /*overflow: hidden;*/
+    border: 3px solid pink;
+    max-height: 100vh;
 }
 
 .content-section p {
-    flex-shrink: 0;
+/*    flex-shrink: 0;*/
+    border: 3px dashed red;
 }
 
 header {
@@ -105,6 +118,7 @@ header {
     text-align: center;
     flex-basis: 400px;
     justify-content: center;
+    border: 3px lightcyan ;
 }
 
 
@@ -116,6 +130,7 @@ main {
     flex-wrap: wrap;
     flex-grow: 1;
     padding: 40px 80px;
+    border: 3px blue ;
 }
 
 .main-article{
@@ -125,16 +140,17 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     align-content: center;
-    flex-shrink: 0;
+/*    flex-shrink: 0;*/
     overflow-wrap: normal;
     overflow: visible;
+    border: 3px solid grey ;
 }
 
-.main-content {
+.main-content article{
     display: flex;
     flex-direction: column;
     flex-basis: 260px;
-    flex-shrink: 0;
+/*    flex-shrink: 0;*/
     flex-grow: 1;
     gap: 15px;
     justify-content: space-evenly;
@@ -142,6 +158,8 @@ main {
     align-items: center;
     overflow-wrap: normal;
     overflow: visible;
+    border: 3px solid green ;
+
 }
 
 
