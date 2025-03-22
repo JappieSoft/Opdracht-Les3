@@ -163,8 +163,8 @@ main {
 }
 
 .article-placeholder-image{
-    max-height: 234px;
-    flex-shrink: 1;
+    width: 100%;
+    max-width: 234px;
 }
 
 /*---------------------------------------------------------*/
