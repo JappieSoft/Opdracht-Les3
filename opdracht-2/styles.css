@@ -1,3 +1,5 @@
+/*even een eerste werkende versie*/
+/*tenminste dat denk ik op het moment..*/
 
 /*------------------Global------------------------*/
 
@@ -81,7 +83,7 @@ aside{
 
 
 /*---------------------------------------------------------*/
-/*----------------------------MAIN-------------------------*/
+/*----------------------------content container------------*/
 
 .content-section {
     display: flex;
@@ -92,7 +94,8 @@ aside{
     max-height: 100vh;
 }
 
-
+/*---------------------------------------------------------*/
+/*----------------------------header-----------------------*/
 
 header {
     display: flex;
@@ -107,6 +110,9 @@ header {
 }
 
 
+/*---------------------------------------------------------*/
+/*----------------------------MAIN-------------------------*/
+
 main {
     display: flex;
     padding: 40px 80px;
@@ -120,7 +126,6 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    align-content: center;
     align-content: flex-start;
     overflow-y: auto;
 }
@@ -158,11 +163,12 @@ main {
 }
 
 .article-placeholder-image{
-    max-height: 234px;
-    flex-shrink: 1;
+    width: 100%;
+    max-width: 234px;
 }
 
-
+/*---------------------------------------------------------*/
+/*---------------------footer------------------------------*/
 
 footer {
     display: flex;
@@ -175,4 +181,5 @@ footer {
     align-items: center;
 }
 
+/*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
