@@ -1,13 +1,4 @@
-body {
-/*    display: flex;
-    flex-direction: row;
-    min-height: calc(100vh);*/
-    /*    overflow-wrap: break-word;
-    TEMP REMOVE
-        padding: 0;
-        height: 100%;*/
 
-}
 /*------------------Global------------------------*/
 
 .flex-containter {
@@ -97,17 +88,11 @@ aside{
     flex-direction: column;
     flex-basis: 425px;
     flex-grow: 12;
-/*    flex-shrink: 0;*/
     overflow-y: hidden;
-    /*overflow: hidden;*/
-    border: 3px solid pink;
     max-height: 100vh;
 }
 
-.content-section p {
-/*    flex-shrink: 0;*/
-    border: 3px dashed red;
-}
+
 
 header {
     display: flex;
@@ -124,42 +109,57 @@ header {
 
 main {
     display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-grow: 1;
     padding: 40px 80px;
-    border: 3px blue ;
+    height: 80%;
+    overflow: hidden;
 }
 
 .main-article{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     align-content: center;
-/*    flex-shrink: 0;*/
-    overflow-wrap: normal;
-    overflow: visible;
-    border: 3px solid grey ;
+    align-content: flex-start;
+    overflow-y: auto;
 }
 
-.main-content article{
+.main-article::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.main-content{
     display: flex;
     flex-direction: column;
-    flex-basis: 260px;
-/*    flex-shrink: 0;*/
+    max-width: 260px;
+    flex-shrink: 0;
     flex-grow: 1;
     gap: 15px;
-    justify-content: space-evenly;
-    align-content: space-around;
-    align-items: center;
-    overflow-wrap: normal;
-    overflow: visible;
-    border: 3px solid green ;
+}
 
+.article-users-icon {
+    display: flex;
+    max-height: 15px;
+}
+
+.main-content span {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.main-content button {
+    background-color: #383838;
+    color: #e3e3e3;
+}
+
+.article-placeholder-image{
+    max-height: 234px;
+    flex-shrink: 1;
 }
 
 
